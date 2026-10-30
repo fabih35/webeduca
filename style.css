@@ -1,0 +1,254 @@
+* 
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #29233a;
+    background-color: #f7f4fc;
+}
+
+header {
+    padding: 2rem 8%;
+    text-align: center;
+    background: linear-gradient(135deg, #54218a, #8a2be2);
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 0.5rem 0 0;
+    color: #eee2ff;
+}
+
+main {
+    width: min(90%, 1100px);
+    margin: 3rem auto;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: white;
+    border: 1px solid #eee6f8;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(67, 35, 100, 0.06);
+}
+
+section h2 {
+    margin-top: 0;
+    color: #54218a;
+}
+
+/* Pesquisa */
+label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.9rem 1rem;
+    font: inherit;
+    border: 1px solid #d9cce9;
+    border-radius: 8px;
+    background-color: #fcfaff;
+}
+
+input:focus {
+    outline: 2px solid #8a2be2;
+    border-color: #8a2be2;
+}
+
+button {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.9rem;
+    font: inherit;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    background-color: #6a1b9a;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #54218a;
+    transform: translateY(-2px);
+}
+
+button:focus-visible,
+input:focus-visible {
+    outline: 3px solid #f0a500;
+    outline-offset: 3px;
+}
+#resultado {
+    margin-top: 1rem;
+    color: #54218a;
+    font-weight: bold;
+}
+
+/* Rodapé */
+footer {
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #2d1745;
+    color: white;
+}
+
+/* Apresentação do projeto */
+.apresentacao {
+    padding: 3rem;
+    background: linear-gradient(135deg, #54218a, #8a2be2);
+    color: white;
+    text-align: center;
+}
+
+.apresentacao h2 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.apresentacao p {
+    max-width: 700px;
+    margin: 0 auto 1rem;
+    color: #f0e5ff;
+}
+
+.botao-apresentacao {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background-color: white;
+    color: #54218a;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.botao-apresentacao:hover {
+    background-color: #eee2ff;
+    transform: translateY(-2px);
+}
+
+/* Adaptação para celulares */
+@media (max-width: 600px) {
+    .apresentacao {
+        padding: 2rem 1.2rem;
+    }
+
+    .apresentacao h2 {
+        font-size: 1.6rem;
+    }
+}
+
+/* CATÁLOGO DE CURSOS */
+
+.catalogo {
+    padding: 2.5rem;
+}
+
+.titulo-catalogo {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.titulo-catalogo p {
+    color: #746b80;
+}
+
+/* Filtro de categorias */
+.filtro-cursos {
+    max-width: 350px;
+    margin-bottom: 2rem;
+}
+
+.filtro-cursos label {
+    font-weight: bold;
+}
+
+.filtro-cursos select {
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.8rem;
+    font: inherit;
+    border: 1px solid #d9cce9;
+    border-radius: 8px;
+    background-color: #fcfaff;
+    color: #29233a;
+}
+
+/* Organização dos cursos */
+.lista-cursos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+/* Cards individuais */
+.curso-card {
+    padding: 1.5rem;
+    border: 1px solid #eee6f8;
+    border-radius: 12px;
+    background-color: #fcfaff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.curso-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(84, 33, 138, 0.12);
+}
+
+.icone-curso {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.categoria {
+    display: inline-block;
+    padding: 0.3rem 0.7rem;
+    border-radius: 20px;
+    background-color: #eee2ff;
+    color: #54218a;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.curso-card h3 {
+    color: #54218a;
+    margin-bottom: 0.5rem;
+}
+
+.curso-card p {
+    color: #746b80;
+    margin-bottom: 0;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .lista-cursos {
+        grid-template-columns: 1fr;
+    }
+
+    .catalogo {
+        padding: 1.5rem;
+    }
+}
+
+

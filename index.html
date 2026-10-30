@@ -1,0 +1,125 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meu portal acadêmico</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>WebEduca</h1>
+        <p>Aprenda tecnologia de forma prática.</p>
+    </header>
+
+    <main>
+
+        <!-- Apresentação do projeto -->
+        <section class="apresentacao" aria-labelledby="apresentacao-titulo">
+            <h2 id="apresentacao-titulo">
+                Aprenda hoje. Construa seu futuro.
+            </h2>
+
+            <p>
+                O WebEduca é um portal educacional criado para facilitar
+                o acesso ao conhecimento e incentivar o aprendizado
+                na área da tecnologia.
+            </p>
+
+            <p>
+                Explore cursos, desenvolva novas habilidades e prepare-se
+                para novas oportunidades no mundo digital.
+            </p>
+
+            <a href="#cursos" class="botao-apresentacao">
+                Explorar cursos
+            </a>
+        </section>
+
+        <!-- Catálogo de cursos -->
+        <section id="cursos" class="catalogo" aria-labelledby="catalogo-titulo">
+
+            <div class="titulo-catalogo">
+                <h2 id="catalogo-titulo">Explore nossos cursos</h2>
+                <p>Encontre conteúdos para desenvolver suas habilidades em tecnologia.</p>
+            </div>
+
+            <!-- Filtro por categoria -->
+            <div class="filtro-cursos">
+                <label for="filtro-categoria">Filtrar por categoria:</label>
+
+                <select id="filtro-categoria">
+                    <option value="todos">Todas as categorias</option>
+                    <option value="programacao">Programação</option>
+                    <option value="web">Desenvolvimento Web</option>
+                    <option value="banco">Banco de Dados</option>
+                </select>
+            </div>
+
+            <!-- Lista de cursos -->
+            <div class="lista-cursos" id="lista-cursos">
+
+                <article class="curso-card" data-categoria="web">
+                    <div class="icone-curso">🌐</div>
+                    <span class="categoria">Desenvolvimento Web</span>
+                    <h3>HTML e CSS</h3>
+                    <p>Aprenda a criar páginas e estruturar sites com HTML e CSS.</p>
+                </article>
+
+                <article class="curso-card" data-categoria="programacao">
+                    <div class="icone-curso">💻</div>
+                    <span class="categoria">Programação</span>
+                    <h3>JavaScript</h3>
+                    <p>Conheça a linguagem que permite adicionar interatividade aos sites.</p>
+                </article>
+
+                <article class="curso-card" data-categoria="banco">
+                    <div class="icone-curso">🗄️</div>
+                    <span class="categoria">Banco de Dados</span>
+                    <h3>Banco de Dados</h3>
+                    <p>Aprenda conceitos de armazenamento, organização e consulta de dados.</p>
+                </article>
+
+                <article class="curso-card" data-categoria="programacao">
+                    <div class="icone-curso">🐍</div>
+                    <span class="categoria">Programação</span>
+                    <h3>Python</h3>
+                    <p>Descubra os fundamentos da programação com Python.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Pesquisa de cursos -->
+        <section id="pesquisa" aria-labelledby="pesquisa-titulo">
+            <h2 id="pesquisa-titulo">Pesquisar cursos</h2>
+
+            <form id="form-pesquisa">
+                <label for="curso">Nome do curso</label>
+
+                <input
+                    id="curso"
+                    name="curso"
+                    type="search"
+                    placeholder="Ex.: HTML e CSS"
+                >
+
+                <button type="submit">Pesquisar</button>
+            </form>
+
+            <p id="resultado" aria-live="polite"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>WebEduca — Projeto educacional.</p>
+    </footer>
+</body>
+</html>
